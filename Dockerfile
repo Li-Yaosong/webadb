@@ -3,7 +3,7 @@ WORKDIR /app
 
 ARG VERSION=1.52.0
 
-RUN git clone --recurse-submodules https://github.com/Li-Yaosong/old-demo.git
+RUN git clone --recurse-submodules https://github.com/Li-Yaosong/old-demo.git webadb
 WORKDIR /app/webadb
 FROM node:20 AS build
 
