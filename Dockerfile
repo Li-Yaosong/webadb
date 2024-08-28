@@ -10,7 +10,7 @@ FROM node:20 AS build
 COPY --from=git /app/webadb /app/webadb
 WORKDIR /app/webadb
 RUN npm install -g pnpm
-RUN pnpm intsll
+RUN pnpm install
 RUN pnpm recursive run build
 
 FROM node:20 AS final
